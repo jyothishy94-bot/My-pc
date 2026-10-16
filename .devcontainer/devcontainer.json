@@ -1,0 +1,18 @@
+{
+  "name": "Auto Linux Desktop",
+  "image": "://microsoft.com",
+  "features": {
+    "ghcr.io/devcontainers/features/desktop-lite:1": {
+      "password": "vscode",
+      "webPort": "6080"
+    }
+  },
+  "forwardPorts":,
+  "portsAttributes": {
+    "6080": {
+      "label": "Linux Desktop",
+      "onAutoForward": "notify"
+    }
+  },
+  "postCreateCommand": "bash setup.sh"
+  }
